@@ -3,3 +3,93 @@
   color: #000;
   text-decoration: none;
 }
+
+.banner-image {
+
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 30px;
+ 
+}
+
+.banner-img {
+
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.banner-title {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.content-banner{
+
+  padding: 0 50px;
+  text-align: center;
+
+}
+
+.all-recipes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-recipes {
+  background-color: beige;
+ 
+}
+
+.title{
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.card{
+  max-width: 300px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 5px 10px;
+}
+
+.card:hover{
+  opacity: 0.8;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.image-card{
+  border-radius: 5px;
+}
+
+.search{
+  width: 800px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.btn{
+  padding: 10px;
+  background-color: rgb(95, 133, 95);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 26, 32);
+  color: #fff;
+  padding: 10px 30px;
+}
