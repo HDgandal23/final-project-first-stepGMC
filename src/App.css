@@ -53,14 +53,11 @@
   max-width: 300px;
   height: auto;
   margin: 10px;
-  cursor: pointer;
+  
   border: none;
-  box-shadow: 3px 5px 10px;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.card:hover{
-  opacity: 0.8;
-}
 
 .card-text{
   text-align: center;
@@ -92,4 +89,61 @@
   background-color: rgb(20, 26, 32);
   color: #fff;
   padding: 10px 30px;
+}
+
+.single-page {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.single-image {
+
+ margin: 30px;
+ width: auto;
+ height: auto;
+ border-radius: 10px;
+}
+
+.img {
+  
+  border-radius: 20px;
+  height: 500px;
+}
+
+.single-texte {
+
+  margin: 30px;
+}
+
+.Link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-link {
+
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-link:hover{
+
+  background-color: #535151;
+}
+
+.link-card{
+  text-decoration: none;
+  color: #577a83;
+  font-size: 20px;
+}
+
+.link-card:hover{
+
+  color: #000;
+  text-decoration: underline;
 }

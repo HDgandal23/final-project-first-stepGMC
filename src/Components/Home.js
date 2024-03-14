@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import Banner from './Banner'
-import Footer from './Footer'
 import RecipCard from './RecipCard'
 import Search from './Search'
+
 
 function Home() {
 
@@ -56,7 +56,7 @@ function Home() {
         {
             recipes && recipes.length > 0 ? recipes.map((recipe) => (
 
-                <Banner banner={recipe.strMealThumb}/>
+                <Banner  banner={recipe.strMealThumb}/>
 
             )): "Meal Not Found"
         }
@@ -70,11 +70,14 @@ function Home() {
                 loading = {loading}
                 />
             </div>
+            
             <div className='all-recipes'>
                 {
                 allrecipes && allrecipes.length > 0 ? allrecipes.map((recipes) => (
-
-                    <RecipCard recipe={recipes}/>
+                    
+                    <RecipCard key={recipes.idMeal} recipe={recipes}/>
+                   
+                    
 
                 )): "Meal Not Found"
                 }
@@ -83,11 +86,7 @@ function Home() {
 
         </div>
 
-        <br/>
-
-        <div>
-        <Footer/>
-        </div>
+       
 
         
     </div>
